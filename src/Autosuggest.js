@@ -531,8 +531,12 @@ export default class Autosuggest extends Component {
     const { inputProps } = this.props;
     const { value } = inputProps;
     const { valueBeforeUpDown } = this.state;
-
-    return (valueBeforeUpDown === null ? value : valueBeforeUpDown).trim();
+    
+    try {
+      return (valueBeforeUpDown === null ? value : valueBeforeUpDown).trim();
+    } catch (error) {
+      return '';
+    }
   }
 
   renderSuggestionsContainer = ({ containerProps, children }) => {
