@@ -1,5 +1,5 @@
 {
-  "name": "felpsio-react-autosuggest",
+  "name": "react-autosuggest",
   "version": "10.1.0",
   "description": "WAI-ARIA compliant React autosuggest component",
   "main": "dist/index.js",
